@@ -1,4 +1,5 @@
-var img = new SimpleImage("lion.jpg") print(img);
+var img = new SimpleImage("lion.jpg");
+print(img);
 
 for (var pixel of img.values())
   {
