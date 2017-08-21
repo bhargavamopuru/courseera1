@@ -1,13 +1,12 @@
-var img = new SimpleImage("duke_blue_devil.png") print(img);
-
+var img = new SimpleImage("duke_blue_devil.png");
+print(img);
 for (var pixel of img.values())
   { 
      pixel = changeToYellow(pixel);
   }
-
 function changeToYellow(pixel)
 {
-   if (pixel.getRed() == 0 )
+   if (pixel.getRed() == 0)
      { 
          pixel.setRed (255);
          pixel.setGreen (255);
