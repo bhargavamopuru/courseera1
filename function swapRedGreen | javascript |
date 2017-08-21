@@ -1,0 +1,15 @@
+var img = new SimpleImage("lion.jpg") print(img);
+
+for (var pixel of img.values())
+  {
+    pixel = swapRedGreen(pixel);
+  }
+
+function swapRedGreen(pixel)
+  { 
+       var oldRed = pixel.getRed(); 
+       var oldGreen = pixel.getGreen(); 
+       pixel.setRed(oldGreen); 
+       pixel.setGreen(oldRed);
+  } 
+print(img);
